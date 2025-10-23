@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="179" height="26" viewBox="0 0 400 80" fill="none">
+  <!-- Brand text -->
+  <text x="200" y="55" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="700" fill="#FF3BA1">nifemi.s.co</text>
+  <!-- Optional sparkles to echo the provided image style -->
+  <g fill="#FF3BA1" opacity="0.9">
+    <path d="M40 20 L48 32 L40 44 L32 32 Z"/>
+    <path d="M360 20 L368 32 L360 44 L352 32 Z"/>
+  </g>
+</svg>
