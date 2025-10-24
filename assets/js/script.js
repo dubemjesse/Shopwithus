@@ -95,3 +95,23 @@ const scrollReveal = function () {
 scrollReveal();
 
 addEventOnElem(window, "scroll", scrollReveal);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const stepLists = document.querySelectorAll('.banner-card .card-steps');
+  stepLists.forEach((list) => {
+    const steps = list.querySelectorAll('.card-step');
+    if (!steps.length) return;
+    let idx = 0;
+    const intervalMs = parseInt(list.getAttribute('data-rotate-interval') || '4000', 10);
+
+    // initialize first step
+    steps.forEach((el, i) => el.classList.toggle('is-active', i === 0));
+
+    setInterval(() => {
+      steps[idx].classList.remove('is-active');
+      idx = (idx + 1) % steps.length;
+      steps[idx].classList.add('is-active');
+    }, intervalMs);
+  });
+});
