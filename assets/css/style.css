@@ -730,6 +730,39 @@ body {
   margin-block: 10px 25px;
 }
 
+.banner-card .card-overlay {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 2;
+}
+
+.banner-card .card-steps {
+  position: relative;
+  list-style: none;
+  margin: 6px 0 0 0;
+  padding: 0;
+  min-height: 1.6em; /* reserve space for one line */
+}
+.banner-card .card-step {
+  position: absolute;
+  inset: 0 auto auto 0; /* top-left */
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.banner-card .card-step.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
@@ -1242,7 +1275,24 @@ body {
    * FOOTER
    */
 
-  .footer .logo { display: block; }
+  .footer .logo {
+    display: block;
+  }
+  .footer .logo svg {
+    fill: currentColor !important;
+  }
+  .footer .logo svg {
+    width: 179px;
+    height: 26px;
+    opacity: 0.35; /* subtle tint */
+    mix-blend-mode: multiply; /* blend into background */
+  }
+  .footer .logo svg text,
+  .footer .logo svg g,
+  .footer .logo svg path {
+    fill: currentColor !important;
+  }
+  .footer .logo { color: var(--black); }
 
   .footer { padding-block: 100px 80px; }
 
