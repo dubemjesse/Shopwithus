@@ -1,1180 +1,1430 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nifemi.s.co - Self care. Room glow. Accessories</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nifemi.s.co - Self care. Room glow. Accessories</title>
-
-  <!-- 
+    <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./icon.jpg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./icon.jpg" type="image/svg+xml" />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- 
+    <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/images/Avarta.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
-  <link rel="preload" as="video" href="./assets/images/bannervid.mp4" type="video/mp4">
-  <link rel="preload" as="video" href="./assets/images/video1.mp4" type="video/mp4">
-  <link rel="preload" as="video" href="./assets/images/video2.mp4" type="video/mp4">
+    <link rel="preload" as="image" href="./assets/images/Avarta.jpg" />
+    <link
+      rel="preload"
+      as="video"
+      href="./assets/images/bannervid.mp4"
+      type="video/mp4"
+    />
+    <link
+      rel="preload"
+      as="video"
+      href="./assets/images/video1.mp4"
+      type="video/mp4"
+    />
+    <link
+      rel="preload"
+      as="video"
+      href="./assets/images/video2.mp4"
+      type="video/mp4"
+    />
+  </head>
 
-</head>
-
-<body id="top">
-
-  <!-- 
+  <body id="top">
+    <!-- 
     - #HEADER
   -->
 
-  <header class="header">  
-
-    <div class="header-top" data-header>
-      <div class="container">
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <span class="line line-1"></span>
-          <span class="line line-2"></span>
-          <span class="line line-3"></span>
-        </button>
-        <div class="input-wrapper">
-          <input type="search" name="search" placeholder="Search product" class="search-field">
-          <button class="search-submit" aria-label="search">
-            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+    <header class="header">
+      <div class="header-top" data-header>
+        <div class="container">
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
           </button>
+          <div class="input-wrapper">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search product"
+              class="search-field"
+            />
+            <button class="search-submit" aria-label="search">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/Avarta.jpg"
+              width="179"
+              height="26"
+              alt="Nifemi.s.co"
+            />
+          </a>
+          <div class="header-actions">
+            <button class="header-action-btn" aria-label="user">
+              <ion-icon
+                name="person-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+            </button>
+            <button class="header-action-btn" aria-label="favourite item">
+              <ion-icon
+                name="star-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+              <span class="btn-badge">0</span>
+            </button>
+            <button class="header-action-btn" aria-label="cart item">
+              <data class="btn-text" value="0">₦0.00</data>
+              <ion-icon
+                name="bag-handle-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+              <span class="btn-badge">0</span>
+            </button>
+          </div>
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link has-after">Home</a>
+              </li>
+              <li>
+                <a href="#collection" class="navbar-link has-after"
+                  >Collection</a
+                >
+              </li>
+              <li>
+                <a href="#shop" class="navbar-link has-after">Shop</a>
+              </li>
+              <li>
+                <a href="#blog" class="navbar-link has-after">Blog</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <a href="#" class="logo">
-          <img src="./assets/images/Avarta.jpg" width="179" height="26" alt="Nifemi.s.co">
-        </a>
-        <div class="header-actions">
-          <button class="header-action-btn" aria-label="user">
-            <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
-          </button>
-          <button class="header-action-btn" aria-label="favourite item">
-            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
-            <span class="btn-badge">0</span>
-          </button>
-          <button class="header-action-btn" aria-label="cart item">
-            <data class="btn-text" value="0">₦0.00</data>
-            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
-            <span class="btn-badge">0</span>
-          </button>
-        </div>
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li>
-              <a href="#home" class="navbar-link has-after">Home</a>
-            </li>
-            <li>
-              <a href="#collection" class="navbar-link has-after">Collection</a>
-            </li>
-            <li>
-              <a href="#shop" class="navbar-link has-after">Shop</a>
-            </li>
-            <li>
-              <a href="#blog" class="navbar-link has-after">Blog</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </div>
-  </header>
-  <!-- 
+    </header>
+    <!-- 
     - #MOBILE NAVBAR
   -->
-  <div class="sidebar">
-    <div class="mobile-navbar" data-navbar>
-      <div class="wrapper">
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" width="179" height="26" alt="nifemi.s.co">
-        </a>
-        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-        </button>
+    <div class="sidebar">
+      <div class="mobile-navbar" data-navbar>
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo.svg"
+              width="179"
+              height="26"
+              alt="nifemi.s.co"
+            />
+          </a>
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li>
+            <a href="#collection" class="navbar-link" data-nav-link
+              >Collection</a
+            >
+          </li>
+          <li>
+            <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+        </ul>
       </div>
-      <ul class="navbar-list">
-        <li>
-          <a href="#home" class="navbar-link" data-nav-link>Home</a>
-        </li>
-        <li>
-          <a href="#collection" class="navbar-link" data-nav-link>Collection</a>
-        </li>
-        <li>
-          <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
-        </li>
-        <li>
-          <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-        </li>
-      </ul>
+      <div class="overlay" data-nav-toggler data-overlay></div>
     </div>
-    <div class="overlay" data-nav-toggler data-overlay></div>
-  </div>
-  <main>
-    <article>
-
-      <!-- 
+    <main>
+      <article>
+        <!-- 
         - #HERO
       -->
 
-      <section class="section hero" id="home" aria-label="hero" data-section>
-        <div class="container">
+        <section class="section hero" id="home" aria-label="hero" data-section>
+          <div class="container">
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="hero-card">
+                  <video
+                    class="hero-video"
+                    src="./assets/images/video1.mp4"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="./assets/images/video1.mp4"
+                  ></video>
 
-          <ul class="has-scrollbar">
+                  <div class="card-content">
+                    <h1 class="h1 hero-title">
+                      Where Self-care <br />
+                      Meet Aesthetic Living
+                    </h1>
 
-            <li class="scrollbar-item">
-              <div class="hero-card">
-                <video class="hero-video" src="./assets/images/video1.mp4" autoplay muted loop playsinline preload="metadata" poster="./assets/images/video1.mp4"></video>
+                    <p class="hero-text">
+                      From self-care essentials <br />To Pinterest-inspired
+                      décor.
+                    </p>
 
-                <div class="card-content">
+                    <p class="price">Starting at ₦999.99</p>
 
-                  <h1 class="h1 hero-title">
-                    Reveal The <br>
-                    Beauty of Skin
-                  </h1>
-
-                  <p class="hero-text">
-                    Made using clean, non-toxic ingredients, our products are designed for everyone.
-                  </p>
-
-                  <p class="price">Starting at ₦999.99</p>
-
-                  <a href="#" class="btn btn-primary">Shop Now</a>
-
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+                  </div>
                 </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-      <!-- 
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- 
         - #COLLECTION
       -->
-      <section class="section collection" id="collection" aria-label="collection" data-section>
-        <div class="container">
+        <section
+          class="section collection"
+          id="collection"
+          aria-label="collection"
+          data-section
+        >
+          <div class="container">
+            <ul class="collection-list">
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title">Caviar Soft Nourishing Eye Mask</h2>
 
-          <ul class="collection-list">
+                  <p class="card-text"></p>
 
-            <li>
-              <div class="collection-card has-before hover:shine">
+                  <a href="#" class="btn-link">
+                    <span class="card-text">₦500.00</span>
 
-                <h2 class="h2 card-title">Caviar Soft Nourishing Eye Mask</h2>
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
 
-                <p class="card-text"></p>
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/collection1.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
 
-                <a href="#" class="btn-link">
-                  <span class="card-text">₦500.00</span>
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title">2 In 1 Lip and Eye Mask</h2>
 
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
+                  <p class="card-text"></p>
 
-                <div class="has-bg-image" style="background-image: url('./assets/images/collection1.jpg')"></div>
+                  <a href="#" class="btn-link">
+                    <span class="span">₦1500.00</span>
 
-              </div>
-            </li>
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
 
-            <li>
-              <div class="collection-card has-before hover:shine">
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/collection4.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
 
-                <h2 class="h2 card-title">2 In 1 Lip and Eye Mask</h2>
+              <li>
+                <div class="collection-card has-before hover:shine">
+                  <h2 class="h2 card-title">Face Scrub</h2>
 
-                <p class="card-text"></p>
+                  <p class="card-text"></p>
 
-                <a href="#" class="btn-link">
-                  <span class="span">₦1500.00</span>
+                  <a href="#" class="btn-link">
+                    <span class="span">₦1500.00</span>
 
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
 
-                <div class="has-bg-image" style="background-image: url('./assets/images/collection4.jpg')"></div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="collection-card has-before hover:shine">
-
-                <h2 class="h2 card-title">Face Scrub</h2>
-
-                <p class="card-text"></p>
-
-                <a href="#" class="btn-link">
-                  <span class="span">₦1500.00</span>
-
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-                <div class="has-bg-image" style="background-image: url('./assets/images/collection5.jpg')"></div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-      <!-- 
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/collection5.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- 
         - #SHOP
       -->
 
-      <section class="section shop" id="shop" aria-label="shop" data-section>
-        <div class="container">
+        <section class="section shop" id="shop" aria-label="shop" data-section>
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Our Products</h2>
 
-          <div class="title-wrapper">
-            <h2 class="h2 section-title">Our Products</h2>
+              <a href="#" class="btn-link">
+                <span class="span">Shop All Products</span>
 
-            <a href="#" class="btn-link">
-              <span class="span">Shop All Products</span>
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
 
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </a>
-          </div>
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/image1.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
 
-          <ul class="has-scrollbar">
+                    <span class="badge" aria-label="20% off">-20%</span>
 
-            <li class="scrollbar-item">
-              <div class="shop-card">
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
 
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/image1.jpg" width="540" height="720" loading="lazy"
-                    alt="Facial cleanser" class="img-cover">
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
 
-                  <span class="badge" aria-label="20% off">-20%</span>
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
                   </div>
-                </div>
 
-                <div class="card-content">
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">₦1000.00</del>
 
-                  <div class="price">
-                    <del class="del">₦1000.00</del>
-
-                    <span class="span">₦800.00</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">Avocado Moisturizing Mask</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <span class="span">₦800.00</span>
                     </div>
 
-                    <p class="rating-text">510 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/image2.jpg" width="540" height="720" loading="lazy"
-                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <span class="span">₦1000.00</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">Hyaluronic Acid Essence</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">517 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/image3.jpg" width="540" height="720" loading="lazy"
-                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <span class="span">₦1000.00</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">Blueberry Moisturizing Mask</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">523 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/image4.jpg" width="540" height="720" loading="lazy"
-                    alt="Facial cleanser" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <span class="span">₦1000.00</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">Niacinamide Essence</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">671 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/image5.jpg" width="540" height="720" loading="lazy"
-                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
-
-                  <span class="badge" aria-label="20% off">-20%</span>
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <del class="del">₦1000.00</del>
-
-                    <span class="span">₦800.00</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">Cucumber Moisturizing Facial Mask</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">323 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/image6.jpg" width="540" height="720" loading="lazy"
-                    alt="Facial cleanser" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <span class="span">₦1000.00</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">Honey Moisturizing Facial Mask</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">170 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/image7.jpg" width="540" height="720" loading="lazy"
-                    alt="Facial cleanser" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <span class="span">₦1000.00</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">Pomegranate Hydrate Facial Mask</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">721 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-
-          </ul>
-
-        </div>
-      </section>
-
-      <section class="section shop" id="shop" aria-label="shop" data-section>
-        <div class="container">
-
-          <div class="title-wrapper">
-            <h2 class="h2 section-title">Accessories</h2>
-
-            <a href="#" class="btn-link">
-              <span class="span">Shop All Products</span>
-
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </a>
-          </div>
-
-          <ul class="has-scrollbar">
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/asses10.jpg" width="540" height="720" loading="lazy"
-                    alt="Hair Claws" class="img-cover">
-
-                  <span class="badge" aria-label="20% off">-20%</span>
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <del class="del">₦2500.00</del>
-
-                    <span class="span">₦2000.00</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">Hair Claws</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">317 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/asses1.jpg" width="540" height="720" loading="lazy"
-                    alt="Eye Brow Razor" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <span class="span">₦1500.00</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">Eye Brow Razor</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">223 reviews</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/asses4.jpg" width="540" height="720" loading="lazy"
-                    alt="Lip Scrub" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                  </div>
-                </div>
-
-                <div class="card-content">
-
-                  <div class="price">
-                    <span class="span">₦1000.00</span>
-                  </div>
-
-                  <h3>
-                    <a href="#" class="card-title">Lip Scrub</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    <h3>
+                      <a href="#" class="card-title"
+                        >Avocado Moisturizing Mask</a
+                      >
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
                       </div>
-                    <p class="rating-text">170 reviews</p>
 
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/asses8.jpg" width="540" height="720" loading="lazy"
-                    alt="Pinterest Wallframe" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
+                      <p class="rating-text">510 reviews</p>
+                    </div>
                   </div>
                 </div>
+              </li>
 
-                <div class="card-content">
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/image2.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Bio-shroom Rejuvenating Serum"
+                      class="img-cover"
+                    />
 
-                  <div class="price">
-                    <span class="span">₦4000.00</span>
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
                   </div>
 
-                  <h3>
-                    <a href="#" class="card-title">Pinterest Wallframe</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">₦1000.00</span>
                     </div>
 
-                    <p class="rating-text">671 reviews</p>
+                    <h3>
+                      <a href="#" class="card-title">Hyaluronic Acid Essence</a>
+                    </h3>
 
-                  </div>
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
 
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/asses5.jpg" width="540" height="720" loading="lazy"
-                    alt="Artificial Tulip" class="img-cover">
-
-                  <span class="badge" aria-label="-10% off">-10%</span>
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
+                      <p class="rating-text">517 reviews</p>
+                    </div>
                   </div>
                 </div>
+              </li>
 
-                <div class="card-content">
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/image3.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Coffee Bean Caffeine Eye Cream"
+                      class="img-cover"
+                    />
 
-                  <div class="price">
-                    <del class="del">₦1500.00</del>
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
 
-                    <span class="span">₦1350.00</span>
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
                   </div>
 
-                  <h3>
-                    <a href="#" class="card-title">Artificial Tulip</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">₦1000.00</span>
                     </div>
 
-                    <p class="rating-text">506 reviews</p>
+                    <h3>
+                      <a href="#" class="card-title"
+                        >Blueberry Moisturizing Mask</a
+                      >
+                    </h3>
 
-                  </div>
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
 
-                </div>
-
-              </div>
-            </li>
-
-            <li class="scrollbar-item">
-              <div class="shop-card">
-
-                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/asses6.jpg" width="540" height="720" loading="lazy"
-                    alt="Head & Hand Band" class="img-cover">
-
-                  <div class="card-actions">
-
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="add to whishlist">
-                      <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
-                    </button>
-
+                      <p class="rating-text">523 reviews</p>
+                    </div>
                   </div>
                 </div>
+              </li>
 
-                <div class="card-content">
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/image4.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
 
-                  <div class="price">
-                    <span class="span">₦3500.00</span>
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
                   </div>
 
-                  <h3>
-                    <a href="#" class="card-title">Head & Hand Band</a>
-                  </h3>
-
-                  <div class="card-rating">
-
-                    <div class="rating-wrapper" aria-label="5 start rating">
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">₦1000.00</span>
                     </div>
 
-                    <p class="rating-text">456 reviews</p>
+                    <h3>
+                      <a href="#" class="card-title">Niacinamide Essence</a>
+                    </h3>
 
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">671 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/image5.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Coffee Bean Caffeine Eye Cream"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">-20%</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
                   </div>
 
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">₦1000.00</del>
+
+                      <span class="span">₦800.00</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >Cucumber Moisturizing Facial Mask</a
+                      >
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">323 reviews</p>
+                    </div>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/image6.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
 
-          </ul>
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
 
-        </div>
-      </section>
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
 
-      <!-- 
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">₦1000.00</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >Honey Moisturizing Facial Mask</a
+                      >
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/image7.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Facial cleanser"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">₦1000.00</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >Pomegranate Hydrate Facial Mask</a
+                      >
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">721 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section shop" id="shop" aria-label="shop" data-section>
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">Accessories</h2>
+
+              <a href="#" class="btn-link">
+                <span class="span">Shop All Products</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/asses10.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Hair Claws"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">-20%</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">₦2500.00</del>
+
+                      <span class="span">₦2000.00</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">Hair Claws</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">317 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/asses1.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Eye Brow Razor"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">₦1500.00</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">Eye Brow Razor</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">223 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/asses4.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Lip Scrub"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">₦1000.00</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">Lip Scrub</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+                      <p class="rating-text">170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/asses8.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Pinterest Wallframe"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">₦4000.00</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">Pinterest Wallframe</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">671 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/asses5.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Artificial Tulip"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="-10% off">-10%</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">₦1500.00</del>
+
+                      <span class="span">₦1350.00</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">Artificial Tulip</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">506 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="shop-card">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/asses6.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      alt="Head & Hand Band"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">₦3500.00</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">Head & Hand Band</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">456 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
         - #BANNER
       -->
-      <section class="section banner" aria-label="banner" data-section>
-        <div class="container">
+        <section class="section banner" aria-label="banner" data-section>
+          <div class="container">
+            <ul class="banner-list">
+              <li>
+                <div class="banner-card banner-card-1 has-before hover:shine">
+                  <p class="card-subtitle">How To Use</p>
+                  <p class="card-text">
+                    1. Tear open the packaging carefully. 2. Take out the mask
+                    and unfold it gently. 3. Apply it on your face, aligning
+                    with your eyes, nose, and mouth. 4. Leave it on for 10–20
+                    minutes to let your skin absorb the essence. 5. Remove the
+                    mask and gently pat the remaining serum into your skin — no
+                    need to rinse.
+                  </p>
 
-          <ul class="banner-list">
-
-            <li>
-              <div class="banner-card banner-card-1 has-before hover:shine">
-
-                <p class="card-subtitle">How To Use</p>
-
-
-                <div class="has-bg-image">
-                  <video class="banner-video" src="./assets/images/video2.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true" poster="./assets/images/banner-1.jpg"></video>
+                  <div class="has-bg-image">
+                    <video
+                      class="banner-video"
+                      src="./assets/images/video3.mp4"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                      preload="metadata"
+                      aria-hidden="true"
+                      poster="./assets/images/banner-1.jpg"
+                    ></video>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li>
+                <div class="banner-card banner-card-2 has-before hover:shine">
+                  <h2 class="h2 card-title"></h2>
 
-            <li>
-              <div class="banner-card banner-card-2 has-before hover:shine">
+                  <p class="card-text"></p>
 
-                <h2 class="h2 card-title"></h2>
-
-                <p class="card-text">
-
-                <div class="has-bg-image">
-                  <video class="banner-video" src="./assets/images/video2.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true" poster="./assets/images/banner-2.jpg"></video>
+                  <div class="has-bg-image">
+                    <video
+                      class="banner-video"
+                      src="./assets/images/video2.mp4"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                      preload="metadata"
+                      aria-hidden="true"
+                      poster="./assets/images/banner-2.jpg"
+                    ></video>
+                  </div>
                 </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-      <!-- 
+        <!-- 
         - #FEATURE
       -->
 
-      <section class="section feature" aria-label="feature" data-section>
-        <div class="container">
+        <section class="section feature" aria-label="feature" data-section>
+          <div class="container">
+            <h2 class="h2-large section-title">Why Shop with nifemi.s.co?</h2>
 
-          <h2 class="h2-large section-title">Why Shop with nifemi.s.co?</h2>
+            <ul class="flex-list">
+              <p>
+                At Nifemi.s.co , we don’t just sell products — we help you
+                create a space and lifestyle you’ll love coming home to. From
+                cozy self-care essentials to aesthetic room décor, every item in
+                our store is carefully handpicked to bring comfort, beauty, and
+                personality to your daily life.
+              </p>
 
-          <ul class="flex-list">
+              <li class="flex-item">
+                <div class="feature-card">
+                  <h3 class="h3 card-title">💖 Curated with Intention</h3>
 
-            <li class="flex-item">
-              <div class="feature-card">
+                  <p class="card-text">
+                    Every product we sell is thoughtfully selected from trusted
+                    suppliers to ensure quality, safety, and style — so you can
+                    shop with confidence.
+                  </p>
+                </div>
+              </li>
 
-                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
-                  class="card-icon">
+              <li class="flex-item">
+                <div class="feature-card">
+                  <h3 class="h3 card-title">🌸 Affordable & Aesthetic</h3>
 
-                <h3 class="h3 card-title">Guaranteed PURE</h3>
+                  <p class="card-text">
+                    We believe you shouldn’t have to break the bank to live
+                    beautifully. Our collection blends affordability with
+                    Pinterest-worthy aesthetics.
+                  </p>
+                </div>
+              </li>
 
-                <p class="card-text">
-                  All Grace formulations adhere to strict purity standards and will never contain harsh or toxic
-                  ingredients
-                </p>
+              <li class="flex-item">
+                <div class="feature-card">
+                  <h3 class="h3 card-title">✨ Quality You Can Trust</h3>
 
-              </div>
-            </li>
+                  <p class="card-text">
+                    Each item is tested and reviewed before it makes it to our
+                    store, ensuring you get durable, reliable, and high-quality
+                    products every time.
+                  </p>
+                </div>
+              </li>
+              <li class="flex-item">
+                <div class="feature-card">
+                  <h3 class="h3 card-title">
+                    🎀 Made to Inspire Your Space & Self-Care Routine
+                  </h3>
 
-            <li class="flex-item">
-              <div class="feature-card">
+                  <p class="card-text">
+                    Whether it’s a soft glow from your fairy lights, a stylish
+                    wall collage, or your favorite self-care item — everything
+                    at Nifemi.s.co is designed to help you express
+                    yourself and feel good.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
 
-                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
-                  alt="Completely Cruelty-Free" class="card-icon">
-
-                <h3 class="h3 card-title">Completely Cruelty-Free</h3>
-
-                <p class="card-text">
-                  All Grace formulations adhere to strict purity standards and will never contain harsh or toxic
-                  ingredients
-                </p>
-
-              </div>
-            </li>
-
-            <li class="flex-item">
-              <div class="feature-card">
-
-                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
-                  alt="Ingredient Sourcing" class="card-icon">
-
-                <h3 class="h3 card-title">Ingredient Sourcing</h3>
-
-                <p class="card-text">
-                  All Grace formulations adhere to strict purity standards and will never contain harsh or toxic
-                  ingredients
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
- 
-    </article>
-  </main>
-
-  <!-- 
+    <!-- 
     - #FOOTER
   -->
 
-  <footer class="footer" data-section>
-    <div class="container">
-
-      <div class="footer-top">
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Information</p>
-          </li>
-
-          <li class="info-line">
-            <a href="tel:+2348080873215" class="info-link" aria-label="Phone">
-              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-              <span>+2348080873215</span>
-            </a>
-            <a href="mailto:nifemisweet.5@gmail.com" class="info-link" aria-label="Email">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-              <span>nifemisweet.5@gmail.com</span>
-            </a>
-            <a href="https://wa.me/+2348055658861" class="info-link" target="_blank" rel="noopener" aria-label="WhatsApp">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-              <span>WhatsApp</span>
-            </a>
-            <a href="https://www.tiktok.com/@nifemi.s.co/" class="info-link" target="_blank" rel="noopener" aria-label="TikTok">
-              <ion-icon name="logo-tiktok"></ion-icon>
-              <span>TikTok</span>
-            </a>
-            <a href="https://www.instagram.com/nifemi.s.co" class="info-link" target="_blank" rel="noopener" aria-label="Instagram">
-              <ion-icon name="logo-instagram"></ion-icon>
-              <span>Instagram</span>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div class="footer-bottom">
-
-        <div class="wrapper">
-          <p class="copyright">
-            &copy; 2025 dubemjesse
-          </p>
-          <ul class="social-list">
-
+    <footer class="footer" data-section>
+      <div class="container">
+        <div class="footer-top">
+          <ul class="footer-list">
             <li>
-              <a href="https://github.com/dubemjesse/" class="social-link" target="_blank" rel="noopener">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
+              <p class="footer-list-title">Contact Us</p>
             </li>
-            <li>             
+
+            <li class="info-line">
+              <a href="tel:+2348080873215" class="info-link" aria-label="Phone">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                <span>+2348080873215</span>
+              </a>
+              <a
+                href="mailto:nifemisweet.5@gmail.com"
+                class="info-link"
+                aria-label="Email"
+              >
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                <span>nifemisweet.5@gmail.com</span>
+              </a>
+              <a
+                href="https://wa.me/+2348055658861"
+                class="info-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="WhatsApp"
+              >
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <span>WhatsApp</span>
+              </a>
+              <a
+                href="https://www.tiktok.com/@nifemi.s.co/"
+                class="info-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="TikTok"
+              >
+                <ion-icon name="logo-tiktok"></ion-icon>
+                <span>TikTok</span>
+              </a>
+              <a
+                href="https://www.instagram.com/nifemi.s.co"
+                class="info-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+                <span>Instagram</span>
+              </a>
             </li>
           </ul>
         </div>
 
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" width="179" height="26" loading="lazy" alt="nifemi.s.co">
-        </a>
+        <div class="footer-bottom">
+          <div class="wrapper">
+            <p class="copyright">&copy; 2025 dubemjesse</p>
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://github.com/dubemjesse/"
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li>
+              <li></li>
+            </ul>
+          </div>
 
-        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/banner.jpg"
+              width="179"
+              height="26"
+              loading="lazy"
+              alt="nifemi.s.co"
+            />
+          </a>
 
+          <img
+            src="./assets/images/pay.png"
+            width="313"
+            height="28"
+            alt="available all payment method"
+            class="w-100"
+          />
+        </div>
       </div>
+    </footer>
 
-    </div>
-  </footer>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #BACK TO TOP
   -->
 
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
-  </a>
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
 
-
-
-
-
-  <!-- 
+    <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
 
-  <!-- 
+    <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
