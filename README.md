@@ -28,6 +28,7 @@ Shopwithus is a single-page, static site intended as a storefront/landing. It us
 - Unified footer with contact links (Phone, Email, WhatsApp, TikTok, Instagram) and blended logo.
 - Sticky header on scroll and a back‑to‑top button.
 - Scroll reveal animations to activate sections as they enter the viewport.
+- Mobile bottom navigation for quick access on small screens; hidden on larger screens.
 - Responsive layout across breakpoints with simple, tokenized design.
 
 ## Tech Stack
@@ -94,6 +95,14 @@ Shopwithus/
   <ul class="card-steps" data-reveal-interval="700"> … </ul>
   ```
   Fallback: supports `data-rotate-interval` if present.
+- Mobile bottom navigation styling:
+  ```css
+  @media (max-width: 991px) {
+    body { padding-bottom: 68px; }
+    .back-top-btn { bottom: 88px; }
+  }
+  ```
+  Adjust `.mobile-bottom-nav` colors, spacing, and icon sizes in `assets/css/style.css`.
 - Section padding per breakpoint is managed in media queries; adjust `--section-padding` and responsive rules as needed.
 
 ## JavaScript Behavior (`assets/js/script.js`)
@@ -101,6 +110,7 @@ Shopwithus/
 - Header sticky + back‑to‑top activation when `window.scrollY > 150` (`[data-header]`, `[data-back-top-btn]`).
 - Scroll reveal: sections with `[data-section]` receive `active` class when entering viewport.
 - Banner overlay steps: reveal `.card-step` elements sequentially inside `.banner-card .card-steps`; speed configurable with `data-reveal-interval` (default `700ms`; falls back to `data-rotate-interval` when present).
+- Mobile bottom nav uses anchor links for section jumps; no extra JS required; nav items include `[data-nav-link]` for consistent behavior.
 
 ## Assets & Media
 - Video files: `video1.mp4`, `video2.mp4`, `video3.mp4`.
@@ -112,6 +122,7 @@ Shopwithus/
 - Use descriptive `alt` text on images and meaningful link labels.
 - Videos are muted and set to play inline to avoid intrusive audio and improve autoplay reliability.
 - Keep headings semantic and content grouped into sections.
+- Bottom nav provides text labels alongside icons; ensure sufficient contrast and touch targets (~44px).
 
 ## Performance Tips
 - Keep videos lightweight; consider shorter loops and moderate resolutions.
@@ -139,9 +150,12 @@ Shopwithus/
   - `body { margin: 0; }` is applied to remove default margins.
 - Footer logo too strong/too faint:
   - Adjust `.footer .logo img { opacity: … }` or try `mix-blend-mode: screen` for dark backgrounds.
+- Bottom nav overlaps content on small screens:
+  - Confirm `body { padding-bottom: 68px; }` and `.back-top-btn { bottom: 88px; }` within the mobile media query.
 
 ## Changelog (Recent)
 - Changed: “How To Use” steps now reveal sequentially and remain visible; CSS stacks steps vertically.
+- Added mobile bottom navigation with responsive spacing; adjusted back-to-top on mobile.
 - Converted `banner.jpg` to an SVG wrapper (`assets/images/banner.svg`).
 - Switched video posters to `banner-1.svg` and `banner-2.svg`.
 - Removed feature section images; preserved titles and copy.
@@ -149,6 +163,7 @@ Shopwithus/
 - Eliminated extra page spacing with `body { margin: 0; }`.
 
 ## Credits
+- Author: dubemjesse
 - Icons: Ionicons
 - Assets: `assets/images/`
 - Original design base: `codewithsadee` (CSS structure inspiration)
