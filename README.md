@@ -11,6 +11,7 @@ A modern, static e‑commerce landing page built with HTML, CSS, and vanilla Jav
 - Development Workflow
 - Customization
 - JavaScript Behavior
+- Mobile Interface
 - Assets & Media
 - Accessibility & SEO
 - Performance Tips
@@ -111,6 +112,21 @@ Shopwithus/
 - Scroll reveal: sections with `[data-section]` receive `active` class when entering viewport.
 - Banner overlay steps: reveal `.card-step` elements sequentially inside `.banner-card .card-steps`; speed configurable with `data-reveal-interval` (default `700ms`; falls back to `data-rotate-interval` when present).
 - Mobile bottom nav uses anchor links for section jumps; no extra JS required; nav items include `[data-nav-link]` for consistent behavior.
+
+## Mobile Interface
+The site includes a mobile bottom navigation that appears on small screens and is hidden on larger screens. It provides quick access to Home, Collection, Shop, and Top.`
+
+### Behavior
+- Uses anchor links for section jumps; no extra JavaScript required.
+- Links include `[data-nav-link]` for consistent close/overlay behavior with existing scripts.
+
+### Customize
+- Adjust colors, spacing, and icon sizes in `assets/css/style.css` under `.mobile-bottom-nav` and `.mobile-nav-item`.
+- On small screens, ensure `body` bottom padding and `.back-top-btn` offset are set within `@media (max-width: 991px)` (see Customization section for exact snippets).
+
+### Disable Quickly
+- CSS: add `.mobile-bottom-nav { display: none !important; }` to hide globally.
+- HTML: remove the `<nav class="mobile-bottom-nav">…</nav>` block from `index.html` to disable entirely.
 
 ## Assets & Media
 - Video files: `video1.mp4`, `video2.mp4`, `video3.mp4`.
