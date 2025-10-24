@@ -6,10 +6,6 @@
  * copyright 2022 codewithsadee
  */
 
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -99,10 +95,6 @@
 
 }
 
-
-
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -159,6 +151,7 @@ body {
   font-size: 1.6rem;
   font-weight: var(--fw-500);
   line-height: 1.6;
+  margin: 0; /* remove default body margins to avoid extra space */
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -173,10 +166,6 @@ body {
 ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
-
-
-
-
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -353,10 +342,6 @@ body {
   opacity: 1;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -435,10 +420,6 @@ body {
 
 .header-action-btn:is(:hover, :focus) { color: var(--black_70); }
 
-
-
-
-
 /*-----------------------------------*\
   #MOBILE NAVBAR
 \*-----------------------------------*/
@@ -509,10 +490,6 @@ body {
   pointer-events: all;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -555,10 +532,6 @@ body {
 
 .hero .scrollbar-item { min-width: 100%; }
 
-
-
-
-
 /*-----------------------------------*\
   #COLLECTION
 \*-----------------------------------*/
@@ -587,10 +560,6 @@ body {
   font-weight: var(--fw-600);
   margin-block-end: auto;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #SHOP
@@ -695,9 +664,6 @@ body {
 }
 
 
-
-
-
 /*-----------------------------------*\
   #BANNER
 \*-----------------------------------*/
@@ -745,18 +711,17 @@ body {
 }
 
 .banner-card .card-steps {
-  position: relative;
   list-style: none;
   margin: 6px 0 0 0;
   padding: 0;
-  min-height: 1.6em; /* reserve space for one line */
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 .banner-card .card-step {
-  position: absolute;
-  inset: 0 auto auto 0; /* top-left */
   opacity: 0;
   transform: translateY(6px);
-  transition: opacity 0.35s ease, transform 0.35s ease;
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 .banner-card .card-step.is-active {
   opacity: 1;

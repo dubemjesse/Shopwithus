@@ -102,15 +102,26 @@ document.addEventListener('DOMContentLoaded', () => {
   stepLists.forEach((list) => {
     const steps = list.querySelectorAll('.card-step');
     if (!steps.length) return;
+
+    // Quick sequential reveal: show one-by-one and keep visible
+    const intervalMs = parseInt(
+      list.getAttribute('data-reveal-interval') ||
+      list.getAttribute('data-rotate-interval') ||
+      '700',
+      10
+    );
+
+    // initialize: hide all, then show first
+    steps.forEach((el) => el.classList.remove('is-active'));
     let idx = 0;
-    const intervalMs = parseInt(list.getAttribute('data-rotate-interval') || '4000', 10);
+    steps[idx].classList.add('is-active');
 
-    // initialize first step
-    steps.forEach((el, i) => el.classList.toggle('is-active', i === 0));
-
-    setInterval(() => {
-      steps[idx].classList.remove('is-active');
-      idx = (idx + 1) % steps.length;
+    const timer = setInterval(() => {
+      idx++;
+      if (idx >= steps.length) {
+        clearInterval(timer);
+        return;
+      }
       steps[idx].classList.add('is-active');
     }, intervalMs);
   });
