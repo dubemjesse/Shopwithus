@@ -1429,3 +1429,37 @@ body {
   .offer .container { gap: 120px; }
 
 }
+
+/* Footer contact icons inline layout */
+.footer .contact-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer .contact-icons .footer-list-text {
+  margin: 0;
+}
+
+.footer .contact-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer .contact-link {
+  color: var(--black);
+  font-size: 20px;
+  transition: var(--transition-1);
+}
+
+.footer .contact-link:is(:hover, :focus) {
+  color: var(--hoockers-green);
+}
+
+/* Company contact details icon spacing */
+.footer .footer-list-text ion-icon {
+  vertical-align: middle;
+  margin-inline-end: 8px;
+  font-size: 18px;
+}
