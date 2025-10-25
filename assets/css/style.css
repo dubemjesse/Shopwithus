@@ -312,18 +312,6 @@ body {
   object-fit: cover;
 }
 
-/* Fluid media defaults */
-img, video {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Utility: full width */
-.w-100 {
-  width: 100%;
-  height: auto;
-}
-
 .badge {
   max-width: max-content;
   background-color: var(--hoockers-green);
@@ -859,10 +847,6 @@ img, video {
   display: flex;
   align-items: center;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #BLOG
