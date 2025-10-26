@@ -1530,6 +1530,26 @@ body {
 .footer .info-link ion-icon { font-size: 20px; }
 .footer .info-link:is(:hover, :focus) { color: var(--hoockers-green); }
 
+/* Mobile: stack Contact Us links vertically (expanded breakpoint) */
+@media (max-width: 991px) {
+  .footer .info-line {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer .info-link {
+    width: 100%;
+    font-size: var(--fs-8);
+    line-height: 1.4;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+}
+
 .footer .info-item { border-top: 1px solid var(--cultured-2); }
 .footer .info-item:first-of-type { border-top: none; }
 .footer-list-text { font-size: var(--fs-8); }
